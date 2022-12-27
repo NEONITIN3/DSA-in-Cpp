@@ -1,0 +1,8 @@
+dekh bro array data structure aya jab hame bahut jayada variable store karna hai
+kyoki agar int int kar k store kare to agar 100 var hai to 100 int var bannana hoga 
+aur jyada aa gaye to yahi kaam bahut hi muskil ho jayega
+
+Tabhi array picture m aaya ye bola mere ko de do ek sath sabhi ek type ke datastructure var ko
+1.array ek time pe ek hi type ka data strore kar sakata hai
+2.indexing 0 se start hogi 
+
