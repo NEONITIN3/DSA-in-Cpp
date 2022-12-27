@@ -5,4 +5,8 @@ aur jyada aa gaye to yahi kaam bahut hi muskil ho jayega
 Tabhi array picture m aaya ye bola mere ko de do ek sath sabhi ek type ke datastructure var ko
 1.array ek time pe ek hi type ka data strore kar sakata hai
 2.indexing 0 se start hogi 
+3. particular element ko acces karne me 0(1) ka time lagata hai kyoki index pata hai to
+4. inersion aur deletion(except last wala index) me 0(n ) ka time lagata hai
+5.size generyly fixed hoti hai agar Dynamic array nahi used ka rahe hai to.
+
 
