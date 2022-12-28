@@ -1,0 +1,81 @@
+hota kya hai agar apka prgram recursion pe hai to Tail recursion ho to Badiya hot ahai
+
+Tail recursion tab kahate hai jab chile recurion direct return ho parent 
+k pass naki khatam hone k baad kuch computation kar raha hai
+uske baad parent pe return ho raha hai 
+jaise fun(int n)
+  base 
+  return 2*fun(n-1) //yaha child wala dekh arhe ho khud khatm hoga uske baad 2 ka multiplication hoga 
+  uske baad sabko leke jayega parent k paas .
+  tail recursion hone se stuck-frame less used hota hai
+  aur memory less use karta hai
+
+  a recursive function in which the recursive call is the last statement that is
+executed by the function. So basically nothing is left to execute after the recursion call. 
+
+to agar recursion end huwa phir bhi kuch bach ja raha hai
+ execute hone k liye to wo tail recursion nahi hai
+
+ aur ye jo ab k moder compiler hai-----
+ Modern compilers recognize tail recursion and optimize
+  it so that it uses the same amount of memory as an iterative version.
+ A tail recursive method is one way to specify an iterative process.
+
+modern compiler agar tailrecursion hai to wo use elminate kar deta hai simple 
+ek iteration wla program bana deta hai
+ "If a recursive function calling 
+ itself and that recursive call 
+ is the last statement in the function 
+ then it's known as Tail Recursion"
+
+
+Question - Can we convert every non tail recursive to tail recursive.
+Ans - No! we can do for only certain recurisive function.
+
+Quick sort is tail recurisive hai
+merge sort nahi hai
+
+factorial ka tail recursion   ----------->>>>>>>>>>>>>>>>>
+
+
+int fib(int n){
+    if(n==1) 
+    retrun n;
+    return n*fib(n-1)
+    //to ye tail recursion nahi hai...kyoki recursion call end hone k baad compute hoga *n then return hoga parent ko
+    
+}
+ab eska tail recursion karte hai
+
+initialy a==1 pass karna h
+int fib(int n,int a){
+    if(n==1)
+    return a;
+    return fib(n-1,a*n) 
+    //a m a*n hota rahega n-- ghata rahega phir last m agar n==1 to matalb pura ho gaya 
+    //to a m store ho gaya hoga bas wahi return kar lenge.
+}
+
+fabbinoci series----------->>>>>>>>>>>>>>>>>
+
+int fabbi(int n){
+    if(n==1 || n==0)
+    return n;
+  return fibbi(n-1)+fib(n-2);
+    //yaha bhi tail recursion nahi hai dono function exicute hoaga add hoag tab parent ko return hoga
+}
+
+int fabbi (int n){
+if(n==1 || n==0)
+return n;
+int a=0,b=1,c=0;
+for(int i=2;i<n;i++);
+    {
+        int t=a;
+        a=b;
+        c=a+b;
+        b=c;
+    }
+    return  c;
+}
+
