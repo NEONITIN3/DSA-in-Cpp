@@ -12,7 +12,7 @@ bool check(int a[],int n){
 }
 
 int main() {
- int a[]={8,10,10,12,2};
+ int a[]={5,12,2,25,67};
  int n=sizeof(a)/sizeof(a[0]);
  cout<<check(a,n);
  
