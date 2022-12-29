@@ -10,14 +10,14 @@ int main(){
     //this is optimisez for max element
     int n=sizeof(a)/sizeof(a[0]); 
     //cout<<n;
-    int max=0,sec_max=0;
+    int max=0;
     for(int i=0;i<n;i++){
         if(a[i]>a[max])
         ///sec_max=max;
            max=i;
     }
      cout<<"index of max element -> "<<max <<" and elment is ->"<<a[max]<<endl;
-     cout<<"second max index is "<<sec_max<<" element is "<<a[sec_max];
+     //cout<<"second max index is "<<sec_max<<" element is "<<a[sec_max];
    return 0;
 
 }

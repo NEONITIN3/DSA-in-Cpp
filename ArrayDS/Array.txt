@@ -13,9 +13,7 @@ Tabhi array picture m aaya ye bola mere ko de do ek sath sabhi ek type ke datast
 java m arrayList hai
 python m list hai
 
-ye sab Dynamic array k liye use hot ehai
 
-ye sab Dynamic array k liye use hot ehai
 
 
 
