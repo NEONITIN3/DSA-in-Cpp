@@ -34,9 +34,39 @@ int largest_index(int a[],int n)
   return sec_largest;
  } 
 
+
+
+
+
+//but it is not optimisez yaha two times traversal ho raha hai ...
+//ek great wal ek liye phir sec large k liye
+
+//**************Optimized******************//
+
+int sec_Largest(int a[], int n){
+    int result = -1 ,largest=0;
+    for(int i=1;i<n;i++){
+        if(a[i]>a[largest])
+        {
+            result = largest;
+            largest = i;
+        }
+        else if(a[i]!=a[largest]){
+            if(result==-1 || a[i]>a[result])
+            result=i;
+        }
+    }
+    return result;
+}
+
+
 int main()
 {
   int a[]={12,23,45,1,2,95,909,4};
   int n=8;
-  cout<<"second largest element index  "<<second_maxelement_index(a,n);
+  cout<<"second largest element index  "<<second_maxelement_index(a,n)<<endl;
+  cout<<"optimized solution approach ans " <<sec_Largest(a,n)<<endl;
 }
+
+
+
