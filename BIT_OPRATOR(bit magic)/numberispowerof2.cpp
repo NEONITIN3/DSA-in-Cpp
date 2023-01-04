@@ -8,7 +8,7 @@ using namespace std;
 //O(1)
 int main()
 {
-int n=8;
+int n=16;
 //agar 0 ho gaya to yes else not
 n&(n-1)?cout<<"uable to reprasent":cout<<"we can represent 2^x me";
 }

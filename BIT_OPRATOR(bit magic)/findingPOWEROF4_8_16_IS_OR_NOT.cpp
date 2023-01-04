@@ -15,7 +15,7 @@ int main(){
     
     */
 
-   int n=65 ;//you need to check can it present 4,8,16 power or not
+   int n=16 ;//you need to check can it present 4,8,16 power or not
     if(((n&(n-1))&&(n%3==1))==0)
     cout<<"yes";
     else

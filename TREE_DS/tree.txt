@@ -1,0 +1,2 @@
+its a non -lenear data structure 
+its have heirarichy data type
