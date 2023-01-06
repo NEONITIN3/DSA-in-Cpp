@@ -18,5 +18,5 @@ int main(){
     root->right =new  Node(30);
     root->left->left = new Node(40);
     cout<<"root of thr tree "<<root->key<<endl;//root kya hai tree ka 
-    cout<<"left child of root is  "<<key->left<<endl;
+    cout<<"left child of root is  "<<root->*left<<endl;
 }
