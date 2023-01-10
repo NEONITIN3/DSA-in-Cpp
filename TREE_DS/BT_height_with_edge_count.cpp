@@ -29,7 +29,7 @@ struct node{
 int height_of_BT(node *current){
     //base case 
     if (current==NULL)
-    return -1;
+    return -1;  //esase edge count hoga
 
     //recursive function
     //current->left se max aur right se max le k uska sum+1 se kar de to wahi max height hogi
