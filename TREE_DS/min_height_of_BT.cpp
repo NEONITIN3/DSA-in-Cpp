@@ -36,6 +36,7 @@ int main(){
                              20     30
                          40    50
                                   90
+                                  //min height 2 hai
     */
     cout<<" min height of BT is "<<Min_height_of_BT(root);
 }
