@@ -1,2 +1,26 @@
 its a non -lenear data structure 
 its have heirarichy data type
+tree ki depth matalab root se us node tak ki doori 
+height matalab how much node below that node
+overall tree ki height jo max edge wala hi hoga 
+
+depth= no. of edge present to the node from that node
+height = no. of edge present in to the leaf node
+
+ex 
+                       10
+                 20            30
+           34        45     6     78
+        43                8 
+    80
+overall tree height = longest path m kitne node hai wahi height=5 //kahi kahi jis node ki H nikalana hai usko include karte hai kahi kahi nahi karte hai
+10 ki height ,10 root hai to tree ki height hi 10 ki height hai;
+10 kadepth 0 becoz root 10 hi hai
+
+n=2^h-1 jab root ki height 1 lete hai otherwise n= 2^h+1 -1 //max node of BT
+
+43 ki height 1
+43 ki depth= 3 43 se root m edge 3 hai
+
+
+           
