@@ -24,7 +24,7 @@ struct node{
 int height_of_BT(node *current){
     //base case 
     if (current==NULL)
-    return 0;
+    return 0; //agar esdge k through count karna hai to return -1 kar lena thats its
 
     //recursive function
     //current->left se max aur right se max le k uska sum+1 se kar de to wahi max height hogi
