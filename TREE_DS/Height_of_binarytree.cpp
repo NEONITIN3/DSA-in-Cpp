@@ -6,7 +6,8 @@ to ham dfs laga k dekhenge left m koun max hai node phir right ka bhi dono m jo 
                              20     30
                          40    50
                                   90
-                    //   height 4                         
+                    //   height 4   
+                    //max path length from root to leaf m no. of nodeis the height                      
 */
 #include<bits/stdc++.h>
 
