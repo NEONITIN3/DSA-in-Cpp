@@ -28,6 +28,7 @@ diameter matalab longest path between two leaf node k beech m jitne node honge w
 //lets code
 #include<bits/stdc++.h>
 using namespace std;
+
 struct Node {
     int val;
     Node *left,*right;
@@ -36,15 +37,16 @@ struct Node {
         left = right = NULL;
     }
 };
-
-int diameter_of_BT(Node* root){
+//its effective optimized solution for diameter TC )(n)  SC - 0(h)
+//map ka use karke karenge to usme TC same hai but SC 0(N) ho jati hai map k key au rvalue ko store karne k liye kyoki har node ki height store karte hai
+//sabse sasta solution 0(n^2 ) m jisme har node ka dia meter phir each node pe Height nikalnet hai n*n ho jata hai
+int diameter(Node* root,int& result){
     if(root==NULL) //   base
     return 0;
-    int left_height = diameter_of_BT(root -> left);
-    int right_height = diameter_of_BT(root -> right);
-    int max_height = max(left_height,right_height);
-    int min_height = min(left_height,right_height);
-    return 1+max_height+min_height;
+    int lh = diameter(root -> left,result);
+    int rh = diameter(root -> right,result);
+    result = max(result,1+lh+rh); //NOTE:1+lr+lh agar no. of node k basic pe agar number of edge se karna hai to +1 mat karna
+    return 1+max(lh,rh);
 }
 
 int main(){
@@ -54,7 +56,9 @@ int main(){
         root->left->left= new Node(40);
           root->left->right = new Node(50);
            root->left->right->right = new Node(90);
-
-           cout<<"diameter of the BT is "<<diameter_of_BT(root);
+           root->left->right->right -> right = new Node(900);
+            int result = 0;
+           cout<<"diameter of the BT is "<<diameter(root,result);
+           return result;
 
 }
