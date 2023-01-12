@@ -26,7 +26,7 @@ struct node{
 int depth_of_node(node *root,int& value){
     if(root==NULL)
    { return -1;}
-    int dist = -1;
+    int dist = -1; //agar node se depth lena hai to 1 kar do 
     if((root->val == value)
     || (dist=depth_of_node(root->left,value))>=0
     ||(dist=depth_of_node(root->right,value))>=0)
