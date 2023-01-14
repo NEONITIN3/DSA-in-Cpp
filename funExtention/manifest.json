@@ -1,0 +1,15 @@
+{
+    "name" : "Fun",
+   "version" : "0.0.1",
+   "manifest_version" : 2,
+   "browser_action":{
+    "default_popup" : "index1.html",
+    "default_icon" :"Emoji.png",
+    "popup" : "index.html"
+   },
+
+"icons" :{
+    "128" :"Emoji.png"
+},
+"permission" : ["activeTab"]
+}
