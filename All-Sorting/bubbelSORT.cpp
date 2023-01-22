@@ -11,3 +11,4 @@ agar kise bhi pass m koi swapping nahi hue to eska matlab sare elment sorte hai 
 nahi chalana padega
 esase  timple complexity reduced ho jayegi
 */
+
