@@ -2,6 +2,8 @@
 @ define strucuter it means define new data type.
 
 */
+#include <stdio.h>
+#include <conio.h>
 struct date // main k bahar declare kiye hai matalab GLOBAL declaration hai kahi bhi access kar sakte hai;
 {
 int d,m,y;
