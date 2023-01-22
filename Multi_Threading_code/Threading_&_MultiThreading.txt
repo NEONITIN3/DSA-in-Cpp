@@ -1,0 +1,29 @@
+Thread is leight weight process 
+Threads are sometimes called lightweight processes and 
+they do not require their own separate memory space. They can share 
+the memory space of the parent process and communicate with other threads of the same process.
+ Threading is commonly used to perform concurrent execution of 
+two or more parts of a program to increase performance and responsiveness.
+
+Thread me all thread are share memory jiski wajah se intercommunication hota hai jisase calling timekam ho jata hai
+aur thread ek sath chalte hai eska eue se hamar aprogram fast ho jata hai and if we have more than one process to exicute 
+then we we can use threading concept
+
+example of multiThreading
+
+A real-time example of multi-threading is a web 
+server handling multiple client requests simultaneously. 
+The web server software creates a new thread for each incoming request.
+ Each thread is responsible for handling a single client's request and sending back the response.
+  While one thread is waiting for a client's request to be completed, another thread can be handling a different client's request. This allows the server to handle multiple requests at the same time and improves its overall performance and responsiveness.
+
+Another example is a media player application that uses multi-threading to play a video and audio simultaneously. 
+A separate thread can be used to handle the video playback and another thread can handle the audio playback. 
+This allows the audio to continue playing even if the video thread encounters a temporary delay.
+
+Another example is a word processor that uses multi-threading to perform spell-checking and formatting in the background
+ while the user continues to edit the document. This allows the user to continue working on
+  the document while the spell-checking and formatting are being performed in the background, 
+  improving the overall responsiveness of the application.
+
+  
