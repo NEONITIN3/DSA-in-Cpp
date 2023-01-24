@@ -25,5 +25,6 @@ Another example is a word processor that uses multi-threading to perform spell-c
  while the user continues to edit the document. This allows the user to continue working on
   the document while the spell-checking and formatting are being performed in the background, 
   improving the overall responsiveness of the application.
+  yes
 
   
