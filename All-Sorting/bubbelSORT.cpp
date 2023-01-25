@@ -12,3 +12,4 @@ nahi chalana padega
 esase  timple complexity reduced ho jayegi
 */
 
+#include<bits/stdc++.h>
