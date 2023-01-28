@@ -10,6 +10,15 @@ es cas eme hame baki k abche pass ko nahi chalana hai esko pata karne k liye ek 
 agar kise bhi pass m koi swapping nahi hue to eska matlab sare elment sorte hai au rbaki k bache swapp ko 
 nahi chalana padega
 esase  timple complexity reduced ho jayegi
+
+
+
+
+Bubble Sort:
+Bubble Sort is a comparison based Sorting Algorithm.
+It works by checking its adjacent element whether, it is in sorted order or not.
+It is an Inplace Sorting algorithm as we don’t need any extra data structure while sorting.
+It is stable (the sequence of repeating elements does not change).
 */
 
 #include<bits/stdc++.h>
