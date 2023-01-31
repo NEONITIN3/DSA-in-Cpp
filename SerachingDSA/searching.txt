@@ -2,6 +2,7 @@ finding any particular target element
 sabse achhha searching 
 The binary search algorithm works on the principle of divide and conquer
  and it is considered the best searching algorithm because it's faster to run.
+ binary search k liye array already sorted hona chahiye
  bool binSearch(int array[], int key, int left, int right)
 {
 
