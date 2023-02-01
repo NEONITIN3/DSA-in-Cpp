@@ -19,6 +19,53 @@ Bubble Sort is a comparison based Sorting Algorithm.
 It works by checking its adjacent element whether, it is in sorted order or not.
 It is an Inplace Sorting algorithm as we don’t need any extra data structure while sorting.
 It is stable (the sequence of repeating elements does not change).
+
+
+No of Required Passes = (n-1)
+Total Comparisons = (n-1) + (n-2) + (n-3) + .............1 = ( (n-1) * n )/2 = O(n2) { Every Case}
+Total Swaps :
+minimum = 0 {elements are in sorted order}
+
+maximum = (n-1) + (n-2) + (n-3) + .............1 = ( (n-1) * n )/2 = O(n2)
+
+Time Complexity = maximum(Comparison, Swaps)
+
+= O(n2) {Every Case}
+
+Space Complexity : O(1)
 */
 
 #include<bits/stdc++.h>
+using namespace std;
+
+void bubbelsort(int a[],int n){
+    for(int i =0 ;i<n-1; i++)//pass
+    {
+        for(int j= 0;j<n-1-i;j++)
+        {   if(a[j]>a[j+1]) //then swaping need
+               {
+            int temp = a[j];
+            a[j] = a[j+1];
+            a[j+1] = temp;
+               }
+        }
+    }
+}
+
+void printa(int a[], int n){
+  for(int i =0 ;i<n; i++){
+        cout<<a[i]<<" ";
+    }
+}
+int main(){
+    int a[] = {2,1,5,3,88,33,21,7,90,6,433,22};
+    int n = sizeof(a)/sizeof(int);
+    printa(a,n);
+    cout<<endl;
+    cout<<"after sorting "<<endl;
+    bubbelsort(a,n);
+    printa(a,n);
+
+
+return 0;
+}
