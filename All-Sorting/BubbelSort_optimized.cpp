@@ -11,18 +11,33 @@ using namespace std;
 void bubbelsort(int a[], int n){
     bool flag = 0 ;
     for(int i = 0;i <n-1;i++){
-        for(int j= 0;j<n-1-i;j++){
+       
+        for(int j= 0;j<n-1-i;j++)
+        { cout<<"pass  "<<i+1<<" ";
             if(a[j]>a[j+1]){
             int temp = a[j];
             a[j]= a[j+1];
             a[j+1]= temp;
             flag = 1;
-            }
+
+            }           
+       //for visulizationcout
+               cout<<"pass  "<< i+1<<" "<<endl;
+              for(int i =0 ;i<n; i++){
+        cout<<a[i]<<" ";
         }
+         cout<<endl;
+            
+    }
+     cout<<endl;
+       
         if (flag==0)
           break;
     }
 }
+
+
+
 void printa(int a[], int n){
   for(int i =0 ;i<n; i++){
         cout<<a[i]<<" ";
@@ -31,14 +46,12 @@ void printa(int a[], int n){
 
 
 int main(){
-    int a[] = {2,1,5,3,88,33,21,7,90,6,433,22};
+    int a[] = {1,2,3,4,5,6};
     int n = sizeof(a)/sizeof(int);
     printa(a,n);
     cout<<endl;
     cout<<"after sorting "<<endl;
     bubbelsort(a,n);
     printa(a,n);
-
-
 return 0;
 }

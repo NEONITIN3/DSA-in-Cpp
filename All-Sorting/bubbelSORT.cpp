@@ -48,7 +48,15 @@ void bubbelsort(int a[],int n){
             a[j] = a[j+1];
             a[j+1] = temp;
                }
+               //for visulizationcout
+               cout<<"pass  "<< i+1<<" "<<endl;
+              for(int i =0 ;i<n; i++){
+        cout<<a[i]<<" ";
         }
+         cout<<endl;
+            
+    }
+     cout<<endl;
     }
 }
 
@@ -58,7 +66,7 @@ void printa(int a[], int n){
     }
 }
 int main(){
-    int a[] = {2,1,5,3,88,33,21,7,90,6,433,22};
+    int a[] = {1,2,3,4,5,6};
     int n = sizeof(a)/sizeof(int);
     printa(a,n);
     cout<<endl;
