@@ -7,6 +7,7 @@
 //already sorted hoga to only 0(n) other wise 0(n^2 )
 #include<bits/stdc++.h>
 using namespace std;
+//ye optimized wala hai agar kise paass m swap nahi huwa to wo ruk jayega jabki traditional wale m chlta ja raha tha
 
 void bubbelsort(int a[], int n){
     bool flag = 0 ;
