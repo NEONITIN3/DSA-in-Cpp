@@ -1,0 +1,6 @@
+my twilio 
+If you lose your phone, or don't have access to your verification device, this code is your failsafe to access your account.
+id ekh8yjGQ8UwVathPWu8YnTInmePoUvWnsVMDJzyU
+Messaging Service SID
+MGb113d75b1ac4a57bedd4fe1da34ee3aa
+

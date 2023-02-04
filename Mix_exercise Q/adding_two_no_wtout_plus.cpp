@@ -4,5 +4,5 @@
 using namespace std;
 int main()
 {
-    cout<<"hr";
+    cout<<"NEver Give Up";
 }
