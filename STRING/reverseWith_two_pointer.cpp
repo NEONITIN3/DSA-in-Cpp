@@ -1,4 +1,6 @@
 /* Function to reverse arr[] from start to end*/
+#include<bits/stdc++.h>
+using namespace std;
 string rveresestring(string str, int start, int end)
 {
     while (start < end)

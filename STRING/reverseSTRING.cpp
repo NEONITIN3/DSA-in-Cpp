@@ -13,7 +13,7 @@ for(int i = 0;i<str.length()/2; i++){
 }
 
 int main(){
-    string s;
-    cin>>s;
+    string s = "NEOnitin";
+   // cin>>s;
     cout<<"reverse of ->  "<<s<<" "<<reverseString(s);
 }
