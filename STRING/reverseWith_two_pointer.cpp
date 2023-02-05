@@ -17,7 +17,7 @@ string rveresestring(string str, int start, int end)
  
 int main()
 {
-    string str = "Geeksdt";
+    string str = "NEO";
      
     int n = str.length();
  
